@@ -6,7 +6,13 @@ const client = new Client('API_TOKEN');
 ```
 
 ```python
+import asyncio
+from pybelieva import Client
 
+async def main():
+    client = Client("API_TOKEN")
+
+asyncio.run(main())
 ```
 
 ```shell

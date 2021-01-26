@@ -15,7 +15,16 @@ client.getGuildLeaderboard(guildID, { sort: 'cash' });
 ```
 
 ```python
+import asyncio
+from pybelieva import Client
 
+GUILD_ID = 305129477627969547
+
+async def main():
+    client = Client("API_TOKEN")
+    await client.get_guild_leaderboard(GUILD_ID)
+
+asyncio.run(main())
 ```
 
 > Response:

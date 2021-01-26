@@ -15,7 +15,16 @@ client.getGuild(guildID);
 ```
 
 ```python
+import asyncio
+from pybelieva import Client
 
+GUILD_ID = 305129477627969547
+
+async def main():
+    client = Client("API_TOKEN")
+    await client.get_guild(GUILD_ID)
+
+asyncio.run(main())
 ```
 
 > Response:

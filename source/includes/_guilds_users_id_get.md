@@ -16,7 +16,17 @@ client.getUserBalance(guildID, userID);
 ```
 
 ```python
+import asyncio
+from pybelieva import Client
 
+GUILD_ID = 305129477627969547
+USER_ID = 261674810914897931
+
+async def main():
+    client = Client("API_TOKEN")
+    await client.get_user_balance(GUILD_ID, USER_ID)
+
+asyncio.run(main())
 ```
 
 > Response:

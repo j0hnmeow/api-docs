@@ -19,7 +19,17 @@ client.setUserBalance(guildID, userID, { cash: 200, bank: 0 });
 ```
 
 ```python
+import asyncio
+from pybelieva import Client
 
+GUILD_ID = 305129477627969547
+USER_ID = 261674810914897931
+
+async def main():
+    client = Client("API_TOKEN")
+    await client.set_user_balance(GUILD_ID, USER_ID, cash=200, bank=0)
+
+asyncio.run(main())
 ```
 
 > Response:

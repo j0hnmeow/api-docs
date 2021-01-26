@@ -18,7 +18,17 @@ client.getApplicationPermission(guildID)
 ```
 
 ```python
+import asyncio
+from pybelieva import Client
 
+GUILD_ID = 305129477627969547
+
+async def main():
+    client = Client("API_TOKEN")
+    perms = await client.get_permissions(GUILD_ID)
+    print(perms.economy)
+
+asyncio.run(main())
 ```
 
 > Response:
